@@ -1,0 +1,17 @@
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\CustomerManagement.Domain.deps.json
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\CustomerManagement.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\CustomerManagement.Domain.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.AssemblyInfoInputs.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.AssemblyInfo.cs
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.csproj.CoreCompileInputs.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\refint\CustomerManagement.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\ref\CustomerManagement.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.csproj.AssemblyReference.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\Ordering.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\Ordering.Domain.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\Customer.3F67C132.Up2Date
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\bin\Debug\net8.0\CustomerManagement.Domain.runtimeconfig.json
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Domain\obj\Debug\net8.0\CustomerManagement.Domain.genruntimeconfig.cache

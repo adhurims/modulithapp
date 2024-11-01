@@ -1,0 +1,17 @@
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.deps.json
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.AssemblyReference.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfoInputs.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfo.cs
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.CoreCompileInputs.cache
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.50CBBEA9.Up2Date
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\refint\Ordering.Application.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.pdb
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\ref\Ordering.Application.dll
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.runtimeconfig.json
+C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.genruntimeconfig.cache
