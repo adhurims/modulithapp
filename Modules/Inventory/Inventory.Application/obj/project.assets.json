@@ -4177,11 +4177,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
+      "projectUniqueName": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
       "projectName": "Inventory.Application",
-      "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
+      "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
       "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-      "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\obj\\",
+      "outputPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Application\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4198,8 +4198,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
             }
           }
         }

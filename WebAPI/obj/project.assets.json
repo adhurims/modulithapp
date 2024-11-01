@@ -4781,11 +4781,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GITHUB\\modulithapp\\WebAPI\\ModularMonolith.WebAPI.csproj",
+      "projectUniqueName": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\WebAPI\\ModularMonolith.WebAPI.csproj",
       "projectName": "ModularMonolith.WebAPI",
-      "projectPath": "E:\\GITHUB\\modulithapp\\WebAPI\\ModularMonolith.WebAPI.csproj",
+      "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\WebAPI\\ModularMonolith.WebAPI.csproj",
       "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-      "outputPath": "E:\\GITHUB\\modulithapp\\WebAPI\\obj\\",
+      "outputPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -4802,23 +4802,23 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj"
             },
-            "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj"
             },
-            "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj"
             },
-            "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
             },
-            "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
             },
-            "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
+            "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
             }
           }
         }

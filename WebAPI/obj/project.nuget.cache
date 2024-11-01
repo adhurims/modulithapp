@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "ErAL+yW3/Eb8V+Qr5p7t2Hzo+hFjP+sjdRPgdcvlCBAlN1Y6Pwy9uXJAx3+b7e2gu90GWc+KZ9EO3gHdKwbHqA==",
+  "dgSpecHash": "iYtJs2v6DCfcXtfDNhDzV8Ff4qJ/jF6n3phD7nMrvC4GAY5Tz6A9DFidRBb3XMSTNmdBuoQ3zAooE3rey5KewQ==",
   "success": true,
-  "projectFilePath": "E:\\GITHUB\\modulithapp\\WebAPI\\ModularMonolith.WebAPI.csproj",
+  "projectFilePath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\WebAPI\\ModularMonolith.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",
