@@ -17,3 +17,23 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\ref\Ordering.Infrastructure.dll
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.deps.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Infrastructure.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Application.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\bin\Debug\net8.0\Ordering.Application.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.7AF05425.Up2Date
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\refint\Ordering.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\Ordering.Infrastructure.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Infrastructure\obj\Debug\net8.0\ref\Ordering.Infrastructure.dll

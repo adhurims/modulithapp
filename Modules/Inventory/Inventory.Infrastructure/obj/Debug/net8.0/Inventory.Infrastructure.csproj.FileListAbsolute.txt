@@ -17,3 +17,23 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventor.89798F14.Up2Date
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Infrastructure.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Infrastructure.deps.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Infrastructure.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Infrastructure.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Inventory.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventor.89798F14.Up2Date
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\refint\Inventory.Infrastructure.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\Inventory.Infrastructure.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Infrastructure\obj\Debug\net8.0\ref\Inventory.Infrastructure.dll

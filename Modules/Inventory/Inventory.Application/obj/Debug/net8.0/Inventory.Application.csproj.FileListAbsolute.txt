@@ -17,3 +17,23 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventor.1DAC6D85.Up2Date
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Application.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Application.deps.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Application.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Application.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Application.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Inventory.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventor.1DAC6D85.Up2Date
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\refint\Inventory.Application.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\Inventory.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Application\obj\Debug\net8.0\ref\Inventory.Application.dll

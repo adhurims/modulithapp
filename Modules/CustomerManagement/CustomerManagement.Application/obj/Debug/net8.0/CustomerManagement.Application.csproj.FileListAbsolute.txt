@@ -17,3 +17,23 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\Customer.ED26E553.Up2Date
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Application.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Application.deps.json
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Application.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Application.dll
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Application.pdb
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Domain.dll
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\CustomerManagement.Domain.pdb
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.sourcelink.json
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\Customer.ED26E553.Up2Date
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.dll
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\refint\CustomerManagement.Application.dll
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.pdb
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\CustomerManagement.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\CustomerManagement\CustomerManagement.Application\obj\Debug\net8.0\ref\CustomerManagement.Application.dll

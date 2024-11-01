@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "91xWkalxa1lQmwwydQ7O26ATjRq7Wod5j0iivbOXW4npUvlvePaBqrdOxggZSU9eDg38l3RTBTyIxvXLduBmDQ==",
+  "dgSpecHash": "I9wUzYXxBKvzfqelG/V28jSjBoIk0f92EVizOzODvi3tbz7/G96Q3NDmD/Fu9jRnvr/kOASa3pDJFIJ1WvhNCg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
+  "projectFilePath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

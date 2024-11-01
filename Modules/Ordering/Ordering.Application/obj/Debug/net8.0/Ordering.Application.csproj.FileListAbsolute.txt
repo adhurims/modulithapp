@@ -15,3 +15,21 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\ref\Ordering.Application.dll
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.deps.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Application.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.50CBBEA9.Up2Date
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\refint\Ordering.Application.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\Ordering.Application.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Application\obj\Debug\net8.0\ref\Ordering.Application.dll

@@ -3,47 +3,40 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.WebAPI", "WebAPI\ModularMonolith.WebAPI.csproj", "{C2BCE432-A2CB-4D43-A668-E750E2D56950}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Modules", "Modules", "{30884D65-93D2-4B5B-BDC3-AC08F5008186}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Ordering", "Ordering", "{FE7E345B-3096-4060-8A13-70660FDF5735}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Domain", "Modules\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{39324D83-D576-47A1-9FB2-ED8B0D67C0D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Domain", "Modules\Ordering\Ordering.Domain\Ordering.Domain.csproj", "{39324D83-D576-47A1-9FB2-ED8B0D67C0D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Application", "Modules\Ordering\Ordering.Application\Ordering.Application.csproj", "{93D820CB-0831-4EDB-B1C9-7F43930068A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Application", "Modules\Ordering\Ordering.Application\Ordering.Application.csproj", "{93D820CB-0831-4EDB-B1C9-7F43930068A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Ordering.Infrastructure", "Modules\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{22A66684-C75A-4EE5-8783-BC80906BD071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Ordering.Infrastructure", "Modules\Ordering\Ordering.Infrastructure\Ordering.Infrastructure.csproj", "{22A66684-C75A-4EE5-8783-BC80906BD071}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CustomerManagement", "CustomerManagement", "{3625CAE7-B292-4689-9FB4-74218B0F9DD4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Domain", "Modules\CustomerManagement\CustomerManagement.Domain\CustomerManagement.Domain.csproj", "{F2A1E16F-FDFE-4C06-8DCF-CCAE18087F67}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.Domain", "Modules\CustomerManagement\CustomerManagement.Domain\CustomerManagement.Domain.csproj", "{F2A1E16F-FDFE-4C06-8DCF-CCAE18087F67}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Application", "Modules\CustomerManagement\CustomerManagement.Application\CustomerManagement.Application.csproj", "{713ED552-21E2-4899-A08A-0E0A2D16F8BA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.Application", "Modules\CustomerManagement\CustomerManagement.Application\CustomerManagement.Application.csproj", "{713ED552-21E2-4899-A08A-0E0A2D16F8BA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CustomerManagement.Infrastructure", "Modules\CustomerManagement\CustomerManagement.Infrastructure\CustomerManagement.Infrastructure.csproj", "{98303FC4-BEB7-45CB-9D4E-28C4C62F8EDB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CustomerManagement.Infrastructure", "Modules\CustomerManagement\CustomerManagement.Infrastructure\CustomerManagement.Infrastructure.csproj", "{98303FC4-BEB7-45CB-9D4E-28C4C62F8EDB}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Inventory", "Inventory", "{BFC53BAE-F00B-4E7A-8338-710F89E7E2CB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Domain", "Modules\Inventory\Inventory.Domain\Inventory.Domain.csproj", "{FF121161-D28B-4D62-979E-794D54356D0D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Domain", "Modules\Inventory\Inventory.Domain\Inventory.Domain.csproj", "{FF121161-D28B-4D62-979E-794D54356D0D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Application", "Modules\Inventory\Inventory.Application\Inventory.Application.csproj", "{A6822480-C36A-4F5A-A0DE-3C66D66E75FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Application", "Modules\Inventory\Inventory.Application\Inventory.Application.csproj", "{A6822480-C36A-4F5A-A0DE-3C66D66E75FB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Inventory.Infrastructure", "Modules\Inventory\Inventory.Infrastructure\Inventory.Infrastructure.csproj", "{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Infrastructure", "Modules\Inventory\Inventory.Infrastructure\Inventory.Infrastructure.csproj", "{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Frontend", "ModularMonolith.Frontend\ModularMonolith.Frontend.csproj", "{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
-	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C2BCE432-A2CB-4D43-A668-E750E2D56950}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C2BCE432-A2CB-4D43-A668-E750E2D56950}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C2BCE432-A2CB-4D43-A668-E750E2D56950}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C2BCE432-A2CB-4D43-A668-E750E2D56950}.Release|Any CPU.Build.0 = Release|Any CPU
 		{39324D83-D576-47A1-9FB2-ED8B0D67C0D7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{39324D83-D576-47A1-9FB2-ED8B0D67C0D7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{39324D83-D576-47A1-9FB2-ED8B0D67C0D7}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -80,6 +73,13 @@ Global
 		{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{FE7E345B-3096-4060-8A13-70660FDF5735} = {30884D65-93D2-4B5B-BDC3-AC08F5008186}

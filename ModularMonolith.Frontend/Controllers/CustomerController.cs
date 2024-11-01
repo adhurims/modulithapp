@@ -4,7 +4,7 @@ using CustomerManagement.Domain.Entities;
 using CustomerManagement.Domain.Repositories;
 using Microsoft.AspNetCore.Mvc;
 
-namespace ModularMonolith.WebAPI.Controllers
+namespace ModularMonolith.Frontend.Controllers
 {
     // WebAPI/Controllers/CustomerController.cs
     using Microsoft.AspNetCore.Mvc;

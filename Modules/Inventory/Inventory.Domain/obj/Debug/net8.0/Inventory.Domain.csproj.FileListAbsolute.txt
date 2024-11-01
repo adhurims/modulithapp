@@ -15,3 +15,21 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventor.69E31387.Up2Date
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.deps.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Inventory.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventor.69E31387.Up2Date
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\refint\Inventory.Domain.dll
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\Inventory.Domain.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Inventory\Inventory.Domain\obj\Debug\net8.0\ref\Inventory.Domain.dll

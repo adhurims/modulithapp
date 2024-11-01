@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "yJWKufLB0Z2kbNkEiqCQBmSe1VZn7d6BmLVgp3aZnTTE7nyS/d2RsapwImYTwWD7Oc9fdkqtRAWmN7AJ2frlOw==",
+  "dgSpecHash": "OFCsuWbpvjl2Cx7/kndke7OTgJXDMGk6RpXhY6tOKelkgRA1rwQvxWE5mGVM7vbAxEXOZ3o1CgjukZsPiUOjbQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+  "projectFilePath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Dzoiteo1EUDOC088s+xXb5cnVuJ77gpb9iXA3WhkuN2MTtmS8IaH4Yn3tC07ulNQr5o7YQBt9X1s2cvrjeD3iQ==",
+  "dgSpecHash": "vWMeoWd+CwiMNq1fUDs0yRJIe8ZxyxuP4+ck87xNKuOMtsfQlEWsF79va+SNRzKzu40PA2BpkHxnylWxoIy4QA==",
   "success": true,
-  "projectFilePath": "C:\\Users\\adhurim.sulejmani\\Desktop\\Tema Diplomes\\projekti modular-monolith\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+  "projectFilePath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\automapper\\13.0.1\\automapper.13.0.1.nupkg.sha512",
     "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\azure.core\\1.35.0\\azure.core.1.35.0.nupkg.sha512",

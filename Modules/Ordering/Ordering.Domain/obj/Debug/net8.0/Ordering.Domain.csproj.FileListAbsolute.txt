@@ -12,3 +12,18 @@ C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modul
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.csproj.AssemblyReference.cache
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Domain\bin\Debug\net8.0\Ordering.Domain.runtimeconfig.json
 C:\Users\adhurim.sulejmani\Desktop\Tema Diplomes\projekti modular-monolith\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\bin\Debug\net8.0\Ordering.Domain.deps.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\bin\Debug\net8.0\Ordering.Domain.runtimeconfig.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\bin\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\bin\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.csproj.AssemblyReference.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.GeneratedMSBuildEditorConfig.editorconfig
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.AssemblyInfoInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.AssemblyInfo.cs
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.csproj.CoreCompileInputs.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.sourcelink.json
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\refint\Ordering.Domain.dll
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.pdb
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\Ordering.Domain.genruntimeconfig.cache
+E:\GITHUB\modulithapp\Modules\Ordering\Ordering.Domain\obj\Debug\net8.0\ref\Ordering.Domain.dll
