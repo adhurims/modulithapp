@@ -36,14 +36,25 @@ builder.Services.AddAutoMapper(typeof(CustomerProfile), typeof(ProductProfile), 
 //builder.Services.AddMediatR(typeof(Inventory.Application.Services.ProductService));
 //builder.Services.AddMediatR(typeof(Ordering.Application.Services.OrderService));
 
+
+
 var app = builder.Build();
- 
+
+app.UseRouting();
+
+app.UseEndpoints(endpoints =>
+{
+    _ = endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
     app.UseSwaggerUI();
 }
-
+app.UseStaticFiles();
 app.UseHttpsRedirection();
 
 app.Run();
