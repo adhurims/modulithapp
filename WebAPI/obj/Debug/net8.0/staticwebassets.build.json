@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "PYmbdG2XC+2NTdLarMNxo58KnrGcKz/dedDN2HOR92Y=",
+  "Source": "ModularMonolith.WebAPI",
+  "BasePath": "_content/ModularMonolith.WebAPI",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
