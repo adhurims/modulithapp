@@ -1,8 +1,7 @@
-﻿using AutoMapper;
-using CustomerManagement.Application.DTOs;
-using CustomerManagement.Domain.Entities;
-using CustomerManagement.Domain.Repositories;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using ModularMonolith.Frontend.Models;
+using ModularMonolith.Frontend.Services;
+using System.Threading.Tasks;
 
 namespace ModularMonolith.Frontend.Controllers
 {
@@ -15,78 +14,86 @@ namespace ModularMonolith.Frontend.Controllers
 
     public class CustomerController : Controller
     {
-        private readonly ICustomerRepository _customerRepository;
-        private readonly IMapper _mapper;
-        //Test
-        public CustomerController(ICustomerRepository customerRepository, IMapper mapper)
+        private readonly CustomerService _customerService;
+
+        public CustomerController(CustomerService customerService)
         {
-            _customerRepository = customerRepository;
-            _mapper = mapper;
+            _customerService = customerService;
         }
 
+        // GET: Customer
         public async Task<IActionResult> Index()
         {
-            var customers = await _customerRepository.GetAllAsync();
-            var customerDtos = _mapper.Map<IEnumerable<CustomerDto>>(customers);
-            return View(customerDtos);
+            var customers = await _customerService.GetAllCustomersAsync();
+            return View(customers);
         }
 
+        // GET: Customer/Create
         public IActionResult Create() => View();
 
+        // POST: Customer/Create
         [HttpPost]
-        public async Task<IActionResult> Create(CustomerDto customerDto)
+        public async Task<IActionResult> Create(CustomerDto customer)
         {
             if (ModelState.IsValid)
             {
-                var customer = _mapper.Map<Customer>(customerDto);
-                await _customerRepository.AddAsync(customer);
+                await _customerService.CreateCustomerAsync(customer);
                 return RedirectToAction(nameof(Index));
             }
-            return View(customerDto);
+            return View(customer);
         }
 
+        // GET: Customer/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-            var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            var customerDto = _mapper.Map<CustomerDto>(customer);
-            return View(customerDto);
+            var customer = await _customerService.GetCustomerByIdAsync(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return View(customer);
         }
 
+        // POST: Customer/Edit/5
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, CustomerDto customerDto)
+        public async Task<IActionResult> Edit(int id, CustomerDto customer)
         {
             if (ModelState.IsValid)
             {
-                var customer = _mapper.Map<Customer>(customerDto);
-                await _customerRepository.UpdateAsync(customer);
+                await _customerService.UpdateCustomerAsync(id, customer);
                 return RedirectToAction(nameof(Index));
             }
-            return View(customerDto);
+            return View(customer);
         }
 
+        // GET: Customer/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            var customerDto = _mapper.Map<CustomerDto>(customer);
-            return View(customerDto);
+            var customer = await _customerService.GetCustomerByIdAsync(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return View(customer);
         }
 
+        // POST: Customer/Delete/5
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var customer = await _customerRepository.GetByIdAsync(id);
-            //if (customer != null) await _customerRepository.DeleteAsync(customer);
+            await _customerService.DeleteCustomerAsync(id);
             return RedirectToAction(nameof(Index));
         }
 
+        // GET: Customer/Details/5
         public async Task<IActionResult> Details(int id)
         {
-            var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            var customerDto = _mapper.Map<CustomerDto>(customer);
-            return View(customerDto);
+            var customer = await _customerService.GetCustomerByIdAsync(id);
+            if (customer == null)
+            {
+                return NotFound();
+            }
+            return View(customer);
         }
     }
 

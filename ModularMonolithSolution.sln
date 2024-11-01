@@ -29,7 +29,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Application", "Mo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Infrastructure", "Modules\Inventory\Inventory.Infrastructure\Inventory.Infrastructure.csproj", "{8C701605-CFEE-4E0F-8B59-5F3B34AD8942}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.Frontend", "ModularMonolith.Frontend\ModularMonolith.Frontend.csproj", "{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularMonolith.Frontend", "ModularMonolith.Frontend\ModularMonolith.Frontend.csproj", "{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.WebApi", "ModularMonolith.WebApi\ModularMonolith.WebApi.csproj", "{934640BF-30A4-443E-AA74-FDB6F4B8C462}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -77,6 +79,10 @@ Global
 		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{934640BF-30A4-443E-AA74-FDB6F4B8C462}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{934640BF-30A4-443E-AA74-FDB6F4B8C462}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{934640BF-30A4-443E-AA74-FDB6F4B8C462}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{934640BF-30A4-443E-AA74-FDB6F4B8C462}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

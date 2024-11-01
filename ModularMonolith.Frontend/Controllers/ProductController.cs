@@ -6,52 +6,41 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ModularMonolith.WebAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class ProductController : ControllerBase
+    // Controllers/ProductController.cs
+    using Microsoft.AspNetCore.Mvc;
+    using ModularMonolith.Frontend.Models;
+    using ModularMonolith.Frontend.Services;
+    using System.Threading.Tasks;
+
+    public class ProductController : Controller
     {
-        private readonly IProductRepository _productRepository;
-        private readonly IMapper _mapper;
+        private readonly InventoryService _inventoryService;
 
-        public ProductController(IProductRepository productRepository, IMapper mapper)
+        public ProductController(InventoryService inventoryService)
         {
-            _productRepository = productRepository;
-            _mapper = mapper;
+            _inventoryService = inventoryService;
         }
 
-        [HttpGet]
-        public async Task<ActionResult<IEnumerable<ProductDto>>> GetProducts()
+        public async Task<IActionResult> Index()
         {
-            var products = await _productRepository.GetAllAsync();
-            return Ok(_mapper.Map<IEnumerable<ProductDto>>(products));
+            var products = await _inventoryService.GetAllProductsAsync();
+            return View(products);
         }
 
-        //[HttpPost]
-        //public async Task<ActionResult> CreateProduct(ProductDto productDto)
-        //{
-        //    var product = _mapper.Map<Product>(productDto);
-        //    await _productRepository.AddAsync(product);
-        //    return CreatedAtAction(nameof(GetProductById), new { id = product.Id }, productDto);
-        //}
+        public IActionResult Create() => View();
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateProduct(int id, ProductDto productDto)
+        [HttpPost]
+        public async Task<IActionResult> Create(ProductDto product)
         {
-            var product = await _productRepository.GetByIdAsync(id);
-            if (product == null) return NotFound();
-            product.UpdatePrice(productDto.Price);
-            product.UpdateStock(productDto.StockLevel);
-            await _productRepository.UpdateAsync(product);
-            return NoContent();
+            if (ModelState.IsValid)
+            {
+                await _inventoryService.CreateProductAsync(product);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(product);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteProduct(int id)
-        {
-            var product = await _productRepository.GetByIdAsync(id);
-            if (product == null) return NotFound();
-            await _productRepository.DeleteAsync(product);
-            return NoContent();
-        }
+        // Implement Edit, Delete, and Details actions similarly
     }
+
 }

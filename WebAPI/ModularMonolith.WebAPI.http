@@ -1,6 +1,0 @@
-@ModularMonolith.WebAPI_HostAddress = http://localhost:5197
-
-GET {{ModularMonolith.WebAPI_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###

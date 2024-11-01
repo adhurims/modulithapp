@@ -11,6 +11,7 @@ using Inventory.Domain.Repositories;
 using Inventory.Infrastructure.Repositories;
 using Inventory.Application.Mappings;
 using Inventory.Infrastructure.Persistence;
+using ModularMonolith.Frontend.Services;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -31,7 +32,23 @@ builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
 builder.Services.AddControllersWithViews();
 builder.Services.AddAutoMapper(typeof(CustomerProfile), typeof(ProductProfile), typeof(OrderProfile));
+
+builder.Services.AddHttpClient<CustomerService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
+});
+
+builder.Services.AddHttpClient<InventoryService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
+});
+
+builder.Services.AddHttpClient<OrderingService>(client =>
+{
+    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
+});
  
+
 //builder.Services.AddMediatR(typeof(CustomerManagement.Application.Services.CustomerService));
 //builder.Services.AddMediatR(typeof(Inventory.Application.Services.ProductService));
 //builder.Services.AddMediatR(typeof(Ordering.Application.Services.OrderService));

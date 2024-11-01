@@ -1,94 +1,93 @@
-﻿using AutoMapper;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
+using ModularMonolith.Frontend.Models;
+using ModularMonolith.Frontend.Services;
 using Ordering.Application.DTOs;
-using Ordering.Domain.Entities;
-using Ordering.Domain.Repositories;
+using System.Threading.Tasks;
 
 namespace ModularMonolith.WebAPI.Controllers
 {
-    [ApiController]
-    [Route("api/[controller]")]
-    public class OrderingController : ControllerBase
+    public class OrderingController : Controller
     {
-        private readonly IOrderRepository _orderRepository;
-        private readonly IMapper _mapper;
+        private readonly OrderingService _orderingService;
 
-        public OrderingController(IOrderRepository orderRepository, IMapper mapper)
+        public OrderingController(OrderingService orderingService)
         {
-            _orderRepository = orderRepository;
-            _mapper = mapper;
+            _orderingService = orderingService;
         }
 
-        //[HttpGet]
-        //public async Task<ActionResult<IEnumerable<OrderDto>>> GetAllOrders()
-        //{
-        //    var orders = await _orderRepository.GetAllAsync();
-        //    var orderDtos = _mapper.Map<IEnumerable<OrderDto>>(orders);
-        //    return Ok(orderDtos);
-        //}
-
-        [HttpGet("{id}")]
-        public async Task<ActionResult<OrderDto>> GetOrderById(int id)
+        // GET: Ordering
+        public async Task<IActionResult> Index()
         {
-            var order = await _orderRepository.GetByIdAsync(id);
-            if (order == null)
-            {
-                return NotFound();
-            }
-            var orderDto = _mapper.Map<OrderDto>(order);
-            return Ok(orderDto);
+            var orders = await _orderingService.GetAllOrdersAsync();
+            return View(orders);
         }
 
+        // GET: Ordering/Create
+        public IActionResult Create() => View();
+
+        // POST: Ordering/Create
         [HttpPost]
-        public async Task<ActionResult> CreateOrder([FromBody] CreateOrderDto createOrderDto)
+        public async Task<IActionResult> Create(OrderDto order)
         {
-            var order = new Order(createOrderDto.OrderDate);
-            foreach (var item in createOrderDto.Items)
+            if (ModelState.IsValid)
             {
-                var orderItem = new OrderItem(item.ProductId, item.Quantity, item.Price);
-                order.AddItem(orderItem);
+                await _orderingService.CreateOrderAsync(order);
+                return RedirectToAction(nameof(Index));
             }
-
-            await _orderRepository.AddAsync(order);
-
-            var orderDto = _mapper.Map<OrderDto>(order);
-            return CreatedAtAction(nameof(GetOrderById), new { id = order.Id }, orderDto);
+            return View(order);
         }
 
-        [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateOrder(int id, [FromBody] UpdateOrderDto updateOrderDto)
+        // GET: Ordering/Edit/5
+        public async Task<IActionResult> Edit(int id)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
+            var order = await _orderingService.GetOrderByIdAsync(id);
             if (order == null)
             {
                 return NotFound();
             }
-
-            //order.OrderDate = updateOrderDto.OrderDate;
-
-            // Update the items if needed (this is a basic example)
-            order.Items.Clear();
-            foreach (var item in updateOrderDto.Items)
-            {
-                var orderItem = new OrderItem(item.ProductId, item.Quantity, item.Price);
-                order.AddItem(orderItem);
-            }
-
-           // await _orderRepository.UpdateAsync(order);
-            return NoContent();
+            return View(order);
         }
 
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteOrder(int id)
+        // POST: Ordering/Edit/5
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, OrderDto order)
         {
-            var order = await _orderRepository.GetByIdAsync(id);
+            if (ModelState.IsValid)
+            {
+                await _orderingService.UpdateOrderAsync(id, order);
+                return RedirectToAction(nameof(Index));
+            }
+            return View(order);
+        }
+
+        // GET: Ordering/Delete/5
+        public async Task<IActionResult> Delete(int id)
+        {
+            var order = await _orderingService.GetOrderByIdAsync(id);
             if (order == null)
             {
                 return NotFound();
             }
+            return View(order);
+        }
 
-           // await _orderRepository.DeleteAsync(order);
-            return NoContent();
+        // POST: Ordering/Delete/5
+        [HttpPost, ActionName("Delete")]
+        public async Task<IActionResult> DeleteConfirmed(int id)
+        {
+            await _orderingService.DeleteOrderAsync(id);
+            return RedirectToAction(nameof(Index));
+        }
+
+        // GET: Ordering/Details/5
+        public async Task<IActionResult> Details(int id)
+        {
+            var order = await _orderingService.GetOrderByIdAsync(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+            return View(order);
         }
     }
 }
