@@ -1,17 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CustomerManagement.Application.DTOs;
+using Microsoft.AspNetCore.Mvc;
 using ModularMonolith.Frontend.Models;
 using ModularMonolith.Frontend.Services;
 using System.Threading.Tasks;
 
 namespace ModularMonolith.Frontend.Controllers
 {
-    // WebAPI/Controllers/CustomerController.cs
-    using Microsoft.AspNetCore.Mvc;
-    using CustomerManagement.Domain.Repositories;
-    using CustomerManagement.Application.DTOs;
-    using AutoMapper;
-    using System.Threading.Tasks;
-
     public class CustomerController : Controller
     {
         private readonly CustomerService _customerService;
@@ -96,5 +90,4 @@ namespace ModularMonolith.Frontend.Controllers
             return View(customer);
         }
     }
-
 }

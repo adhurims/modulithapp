@@ -5,8 +5,7 @@
     using System.Net.Http;
     using System.Net.Http.Json;
     using System.Threading.Tasks;
-    using CustomerManagement.Application.DTOs;
-    using ModularMonolith.Frontend.Models;
+    using CustomerManagement.Application.DTOs; 
 
     public class CustomerService
     {
