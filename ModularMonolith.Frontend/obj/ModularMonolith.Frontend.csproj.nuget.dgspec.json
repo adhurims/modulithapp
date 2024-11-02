@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "E:\\GITHUB\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj": {}
+    "C:\\github\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj": {}
   },
   "projects": {
-    "E:\\GITHUB\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj": {
+    "C:\\github\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
         "projectName": "ModularMonolith.Frontend",
-        "projectPath": "E:\\GITHUB\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\ModularMonolith.Frontend\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\ModularMonolith.Frontend\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,23 +31,23 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj"
+              "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj"
+              "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj"
+              "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
+              "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj"
               }
             }
           }
@@ -53,11 +56,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -116,21 +114,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
+    "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
         "projectName": "CustomerManagement.Application",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\CustomerManagement.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -144,8 +145,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj"
               }
             }
           }
@@ -154,11 +155,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -206,21 +202,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
+    "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj",
         "projectName": "CustomerManagement.Domain",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -234,8 +233,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -244,11 +243,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -296,21 +290,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
+    "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj",
         "projectName": "CustomerManagement.Infrastructure",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\CustomerManagement.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -324,8 +321,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\CustomerManagement\\CustomerManagement.Domain\\CustomerManagement.Domain.csproj"
               }
             }
           }
@@ -334,11 +331,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -390,21 +382,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
         "projectName": "Inventory.Application",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Application\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\Inventory.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -418,8 +413,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
               }
             }
           }
@@ -428,11 +423,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -480,21 +470,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
         "projectName": "Inventory.Domain",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -508,8 +501,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -518,11 +511,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -570,21 +558,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
         "projectName": "Inventory.Infrastructure",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -598,8 +589,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
               }
             }
           }
@@ -608,11 +599,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -664,21 +650,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
         "projectName": "Ordering.Application",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -692,8 +681,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -702,11 +691,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -754,21 +738,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
         "projectName": "Ordering.Domain",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -788,11 +775,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -840,21 +822,24 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
+    "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
         "projectName": "Ordering.Infrastructure",
-        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
-        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\obj\\",
+        "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\Ordering.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+        "outputPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Infrastructure\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -868,11 +853,11 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Application\\Ordering.Application.csproj"
               },
-              "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
-                "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
+              "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+                "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj"
               }
             }
           }
@@ -881,11 +866,6 @@
           "warnAsError": [
             "NU1605"
           ]
-        },
-        "restoreAuditProperties": {
-          "enableAudit": "true",
-          "auditLevel": "low",
-          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -933,7 +913,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
