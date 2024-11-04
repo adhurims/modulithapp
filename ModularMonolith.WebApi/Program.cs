@@ -1,23 +1,25 @@
-using CustomerManagement.Infrastructure.Persistence;
-using Ordering.Infrastructure.Persistence;
-using CustomerManagement.Infrastructure.Repositories;
-using Ordering.Domain.Repositories;
-using Ordering.Infrastructure.Repositories;
-using CustomerManagement.Application.Mappings;
-using Ordering.Application.Mappings;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Models;
+using System.Text;
+using CustomerManagement.Infrastructure.Persistence;
+using CustomerManagement.Domain.Identity;
+using CustomerManagement.Application.Mappings;
 using CustomerManagement.Domain.Repositories;
-using Inventory.Domain.Repositories;
-using Inventory.Infrastructure.Repositories;
+using CustomerManagement.Infrastructure.Repositories;
 using Inventory.Application.Mappings;
+using Inventory.Domain.Repositories;
 using Inventory.Infrastructure.Persistence;
-using ModularMonolith.Frontend.Services;
+using Inventory.Infrastructure.Repositories;
+using Ordering.Application.Mappings;
+using Ordering.Domain.Repositories;
+using Ordering.Infrastructure.Persistence;
+using Ordering.Infrastructure.Repositories;
 
 var builder = WebApplication.CreateBuilder(args);
-
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
-
+ 
 builder.Services.AddDbContext<CustomerManagementDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerManagementConnection")));
 
@@ -26,52 +28,79 @@ builder.Services.AddDbContext<InventoryDbContext>(options =>
 
 builder.Services.AddDbContext<OrderingDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("OrderingConnection")));
-
+ 
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<CustomerManagementDbContext>()
+    .AddDefaultTokenProviders();
+ 
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = builder.Configuration["Jwt:Issuer"],
+        ValidAudience = builder.Configuration["Jwt:Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(builder.Configuration["Jwt:Key"]))
+    };
+});
+ 
 builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
 builder.Services.AddScoped<IProductRepository, ProductRepository>();
 builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddControllersWithViews();
+ 
 builder.Services.AddAutoMapper(typeof(CustomerProfile), typeof(ProductProfile), typeof(OrderProfile));
-
-builder.Services.AddHttpClient<CustomerService>(client =>
+ 
+builder.Services.AddSwaggerGen(c =>
 {
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "ModularMonolith API", Version = "v1" });
+    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+    {
+        In = ParameterLocation.Header,
+        Description = "Please enter JWT with Bearer prefix",
+        Name = "Authorization",
+        Type = SecuritySchemeType.ApiKey,
+        BearerFormat = "JWT",
+        Scheme = "Bearer"
+    });
+    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+    {
+        {
+            new OpenApiSecurityScheme
+            {
+                Reference = new OpenApiReference
+                {
+                    Type = ReferenceType.SecurityScheme,
+                    Id = "Bearer"
+                }
+            },
+            Array.Empty<string>()
+        }
+    });
 });
-
-builder.Services.AddHttpClient<InventoryService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
-});
-
-builder.Services.AddHttpClient<OrderingService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
-});
-
-
-//builder.Services.AddMediatR(typeof(CustomerManagement.Application.Services.CustomerService));
-//builder.Services.AddMediatR(typeof(Inventory.Application.Services.ProductService));
-//builder.Services.AddMediatR(typeof(Ordering.Application.Services.OrderService));
-
-
+ 
+builder.Services.AddControllers();
 
 var app = builder.Build();
-
-app.UseRouting();
-
-app.UseEndpoints(endpoints =>
-{
-    _ = endpoints.MapControllerRoute(
-        name: "default",
-        pattern: "{controller=Home}/{action=Index}/{id?}");
-});
-
+ 
 if (app.Environment.IsDevelopment())
 {
     app.UseSwagger();
-    app.UseSwaggerUI();
+    app.UseSwaggerUI(c => c.SwaggerEndpoint("/swagger/v1/swagger.json", "ModularMonolith API v1"));
 }
-app.UseStaticFiles();
+ 
 app.UseHttpsRedirection();
+app.UseRouting();
+app.UseAuthentication();  
+app.UseAuthorization();
+
+app.MapControllers();
 
 app.Run();

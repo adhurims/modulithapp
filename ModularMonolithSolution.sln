@@ -31,7 +31,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Inventory.Infrastructure", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularMonolith.Frontend", "ModularMonolith.Frontend\ModularMonolith.Frontend.csproj", "{0AEF0F2D-AC4F-4017-AEB9-9054EB237EAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ModularMonolith.WebApi", "ModularMonolith.WebApi\ModularMonolith.WebApi.csproj", "{934640BF-30A4-443E-AA74-FDB6F4B8C462}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ModularMonolith.WebApi", "ModularMonolith.WebApi\ModularMonolith.WebApi.csproj", "{934640BF-30A4-443E-AA74-FDB6F4B8C462}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -100,5 +100,8 @@ Global
 		{FF121161-D28B-4D62-979E-794D54356D0D} = {BFC53BAE-F00B-4E7A-8338-710F89E7E2CB}
 		{A6822480-C36A-4F5A-A0DE-3C66D66E75FB} = {BFC53BAE-F00B-4E7A-8338-710F89E7E2CB}
 		{8C701605-CFEE-4E0F-8B59-5F3B34AD8942} = {BFC53BAE-F00B-4E7A-8338-710F89E7E2CB}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A3F7B723-99AD-492F-A212-F67B6C1DF9A9}
 	EndGlobalSection
 EndGlobal

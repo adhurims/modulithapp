@@ -9,9 +9,10 @@ namespace CustomerManagement.Domain.Repositories
 {
     public interface ICustomerRepository
     {
-        Task AddAsync(Customer customer);
+        Task AddAsync(Customer customer); 
         Task<Customer> GetByIdAsync(int id);
         Task UpdateAsync(Customer customer);
-        Task<Customer> GetAllAsync();
+        Task<IEnumerable<Customer>> GetAllAsync(); 
+        Task DeleteAsync(Customer customer); 
     }
 }

@@ -15,17 +15,14 @@ namespace ModularMonolith.WebAPI.Controllers
             _orderingService = orderingService;
         }
 
-        // GET: Ordering
         public async Task<IActionResult> Index()
         {
             var orders = await _orderingService.GetAllOrdersAsync();
             return View(orders);
         }
 
-        // GET: Ordering/Create
         public IActionResult Create() => View();
 
-        // POST: Ordering/Create
         [HttpPost]
         public async Task<IActionResult> Create(OrderDto order)
         {
@@ -37,7 +34,6 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(order);
         }
 
-        // GET: Ordering/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
             var order = await _orderingService.GetOrderByIdAsync(id);
@@ -48,7 +44,6 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(order);
         }
 
-        // POST: Ordering/Edit/5
         [HttpPost]
         public async Task<IActionResult> Edit(int id, OrderDto order)
         {
@@ -60,7 +55,6 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(order);
         }
 
-        // GET: Ordering/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
             var order = await _orderingService.GetOrderByIdAsync(id);
@@ -71,7 +65,6 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(order);
         }
 
-        // POST: Ordering/Delete/5
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
@@ -79,7 +72,6 @@ namespace ModularMonolith.WebAPI.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-        // GET: Ordering/Details/5
         public async Task<IActionResult> Details(int id)
         {
             var order = await _orderingService.GetOrderByIdAsync(id);

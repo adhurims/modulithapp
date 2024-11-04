@@ -1,66 +1,65 @@
-﻿using AutoMapper;
-using CustomerManagement.Application.DTOs;
-using CustomerManagement.Domain.Entities;
+﻿using CustomerManagement.Domain.Entities;
 using CustomerManagement.Domain.Repositories;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ModularMonolith.WebAPI.Controllers
 {
+    [Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CustomerController : ControllerBase
     {
         private readonly ICustomerRepository _customerRepository;
-        private readonly IMapper _mapper;
 
-        public CustomerController(ICustomerRepository customerRepository, IMapper mapper)
+        public CustomerController(ICustomerRepository customerRepository)
         {
             _customerRepository = customerRepository;
-            _mapper = mapper;
         }
 
         [HttpGet]
-        public async Task<ActionResult<IEnumerable<CustomerDto>>> GetAllCustomers()
+        public async Task<IActionResult> GetAll()
         {
             var customers = await _customerRepository.GetAllAsync();
-            var customerDtos = _mapper.Map<IEnumerable<CustomerDto>>(customers);
-            return Ok(customerDtos);
+            return Ok(customers);
         }
 
         [HttpGet("{id}")]
-        public async Task<ActionResult<CustomerDto>> GetCustomerById(int id)
+        public async Task<IActionResult> GetById(int id)
         {
             var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            return Ok(_mapper.Map<CustomerDto>(customer));
+            if (customer == null)
+                return NotFound();
+
+            return Ok(customer);
         }
 
         [HttpPost]
-        public async Task<ActionResult> CreateCustomer(CustomerDto customerDto)
+        public async Task<IActionResult> Create(Customer customer)
         {
-            var customer = _mapper.Map<Customer>(customerDto);
             await _customerRepository.AddAsync(customer);
-            return CreatedAtAction(nameof(GetCustomerById), new { id = customer.Id }, customerDto);
+            return CreatedAtAction(nameof(GetById), new { id = customer.Id }, customer);
         }
 
         [HttpPut("{id}")]
-        public async Task<IActionResult> UpdateCustomer(int id, CustomerDto customerDto)
+        public async Task<IActionResult> Update(int id, Customer customer)
         {
-            var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            _mapper.Map(customerDto, customer);
+            if (id != customer.Id)
+                return BadRequest();
+
             await _customerRepository.UpdateAsync(customer);
             return NoContent();
         }
 
         [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteCustomer(int id)
+        public async Task<IActionResult> Delete(int id)
         {
             var customer = await _customerRepository.GetByIdAsync(id);
-            if (customer == null) return NotFound();
-            //await _customerRepository.DeleteAsync(customer);
+            if (customer == null)
+                return NotFound();
+
+            await _customerRepository.DeleteAsync(customer);
             return NoContent();
         }
     }
-
 }

@@ -1,93 +1,68 @@
 ﻿using CustomerManagement.Application.DTOs;
+using CustomerManagement.Domain.Entities;
 using Microsoft.AspNetCore.Mvc;
 using ModularMonolith.Frontend.Models;
 using ModularMonolith.Frontend.Services;
 using System.Threading.Tasks;
 
 namespace ModularMonolith.Frontend.Controllers
-{
+{ 
     public class CustomerController : Controller
     {
-        private readonly CustomerService _customerService;
+        private readonly HttpClient _httpClient;
 
-        public CustomerController(CustomerService customerService)
+        public CustomerController(IHttpClientFactory httpClientFactory)
         {
-            _customerService = customerService;
+            _httpClient = httpClientFactory.CreateClient("WebAPI");
         }
 
-        // GET: Customer
         public async Task<IActionResult> Index()
         {
-            var customers = await _customerService.GetAllCustomersAsync();
+            var customers = await _httpClient.GetFromJsonAsync<List<Customer>>("api/customer");
             return View(customers);
         }
 
-        // GET: Customer/Create
         public IActionResult Create() => View();
 
-        // POST: Customer/Create
         [HttpPost]
-        public async Task<IActionResult> Create(CustomerDto customer)
+        public async Task<IActionResult> Create(Customer customer)
         {
-            if (ModelState.IsValid)
-            {
-                await _customerService.CreateCustomerAsync(customer);
+            var response = await _httpClient.PostAsJsonAsync("api/customer", customer);
+            if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
-            }
+
+            ModelState.AddModelError(string.Empty, "An error occurred while creating the customer.");
             return View(customer);
         }
 
-        // GET: Customer/Edit/5
         public async Task<IActionResult> Edit(int id)
         {
-            var customer = await _customerService.GetCustomerByIdAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
+            var customer = await _httpClient.GetFromJsonAsync<Customer>($"api/customer/{id}");
             return View(customer);
         }
 
-        // POST: Customer/Edit/5
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, CustomerDto customer)
+        public async Task<IActionResult> Edit(int id, Customer customer)
         {
-            if (ModelState.IsValid)
-            {
-                await _customerService.UpdateCustomerAsync(id, customer);
+            var response = await _httpClient.PutAsJsonAsync($"api/customer/{id}", customer);
+            if (response.IsSuccessStatusCode)
                 return RedirectToAction(nameof(Index));
-            }
+
+            ModelState.AddModelError(string.Empty, "An error occurred while updating the customer.");
             return View(customer);
         }
 
-        // GET: Customer/Delete/5
         public async Task<IActionResult> Delete(int id)
         {
-            var customer = await _customerService.GetCustomerByIdAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
+            var customer = await _httpClient.GetFromJsonAsync<Customer>($"api/customer/{id}");
             return View(customer);
         }
 
-        // POST: Customer/Delete/5
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            await _customerService.DeleteCustomerAsync(id);
+            var response = await _httpClient.DeleteAsync($"api/customer/{id}");
             return RedirectToAction(nameof(Index));
-        }
-
-        // GET: Customer/Details/5
-        public async Task<IActionResult> Details(int id)
-        {
-            var customer = await _customerService.GetCustomerByIdAsync(id);
-            if (customer == null)
-            {
-                return NotFound();
-            }
-            return View(customer);
         }
     }
 }

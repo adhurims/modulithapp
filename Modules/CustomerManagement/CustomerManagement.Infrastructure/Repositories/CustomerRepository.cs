@@ -1,7 +1,7 @@
 ﻿using CustomerManagement.Domain.Entities;
 using CustomerManagement.Domain.Repositories;
 using CustomerManagement.Infrastructure.Persistence;
-using Microsoft.EntityFrameworkCore; 
+using Microsoft.EntityFrameworkCore;
 
 namespace CustomerManagement.Infrastructure.Repositories
 {
@@ -24,7 +24,7 @@ namespace CustomerManagement.Infrastructure.Repositories
         {
             return await _context.Customers.FindAsync(id);
         }
-        
+
         public async Task<IEnumerable<Customer>> GetAllAsync()
         {
             return await _context.Customers.ToListAsync();
@@ -40,11 +40,6 @@ namespace CustomerManagement.Infrastructure.Repositories
         {
             _context.Customers.Remove(customer);
             await _context.SaveChangesAsync();
-        }
-
-        Task<Customer> ICustomerRepository.GetAllAsync()
-        {
-            throw new NotImplementedException();
-        }
+        } 
     }
 }

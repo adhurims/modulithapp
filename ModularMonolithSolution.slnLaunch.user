@@ -1,0 +1,16 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Name": "ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
+        "Action": "Start",
+        "DebugTarget": ""
+      },
+      {
+        "Name": "ModularMonolith.WebApi\\ModularMonolith.WebApi.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

@@ -1,77 +1,49 @@
-using CustomerManagement.Infrastructure.Persistence; 
-using Ordering.Infrastructure.Persistence; 
-using CustomerManagement.Infrastructure.Repositories;  
-using Ordering.Domain.Repositories;
-using Ordering.Infrastructure.Repositories;
-using CustomerManagement.Application.Mappings; 
-using Ordering.Application.Mappings;
+using Microsoft.AspNetCore.Identity;
+using CustomerManagement.Infrastructure.Persistence; // DbContext
+using CustomerManagement.Domain.Identity; // ApplicationUser
 using Microsoft.EntityFrameworkCore;
-using CustomerManagement.Domain.Repositories;
-using Inventory.Domain.Repositories;
-using Inventory.Infrastructure.Repositories;
-using Inventory.Application.Mappings;
-using Inventory.Infrastructure.Persistence;
-using ModularMonolith.Frontend.Services;
+using ModularMonolith.Frontend.Services; // Add necessary namespaces
 
 var builder = WebApplication.CreateBuilder(args);
- 
-builder.Services.AddEndpointsApiExplorer();
-builder.Services.AddSwaggerGen();
- 
+
+// Configure services
+builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<CustomerManagementDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("CustomerManagementConnection")));
 
-builder.Services.AddDbContext<InventoryDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("InventoryConnection")));
+// Configure Identity
+builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
+    .AddEntityFrameworkStores<CustomerManagementDbContext>()
+    .AddDefaultTokenProviders();
 
-builder.Services.AddDbContext<OrderingDbContext>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("OrderingConnection")));
- 
-builder.Services.AddScoped<ICustomerRepository, CustomerRepository>();
-builder.Services.AddScoped<IProductRepository, ProductRepository>();
-builder.Services.AddScoped<IOrderRepository, OrderRepository>();
-builder.Services.AddControllersWithViews();
-builder.Services.AddAutoMapper(typeof(CustomerProfile), typeof(ProductProfile), typeof(OrderProfile));
-
-builder.Services.AddHttpClient<CustomerService>(client =>
+// Configure application cookie settings
+builder.Services.ConfigureApplicationCookie(options =>
 {
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
+    options.LoginPath = "/Account/Login";
+    options.AccessDeniedPath = "/Account/AccessDenied";
 });
-
-builder.Services.AddHttpClient<InventoryService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
-});
-
-builder.Services.AddHttpClient<OrderingService>(client =>
-{
-    client.BaseAddress = new Uri("https://localhost:5001/"); // Replace with your Web API's base URL
-});
- 
-
-//builder.Services.AddMediatR(typeof(CustomerManagement.Application.Services.CustomerService));
-//builder.Services.AddMediatR(typeof(Inventory.Application.Services.ProductService));
-//builder.Services.AddMediatR(typeof(Ordering.Application.Services.OrderService));
-
-
 
 var app = builder.Build();
 
+// Seed the database with default user and role
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    await DataSeeder.SeedAsync(services);
+}
+
+// Configure the HTTP request pipeline
+app.UseHttpsRedirection();
+app.UseStaticFiles();
 app.UseRouting();
+app.UseAuthentication(); // Enable authentication middleware
+app.UseAuthorization();
 
 app.UseEndpoints(endpoints =>
 {
-    _ = endpoints.MapControllerRoute(
+    endpoints.MapControllerRoute(
         name: "default",
         pattern: "{controller=Home}/{action=Index}/{id?}");
 });
-
-if (app.Environment.IsDevelopment())
-{
-    app.UseSwagger();
-    app.UseSwaggerUI();
-}
-app.UseStaticFiles();
-app.UseHttpsRedirection();
 
 app.Run();
