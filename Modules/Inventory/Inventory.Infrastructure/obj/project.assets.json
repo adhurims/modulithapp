@@ -5139,19 +5139,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\": {}
+    "C:\\Users\\DELL\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+      "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
       "projectName": "Inventory.Infrastructure",
-      "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
-      "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
-      "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\obj\\",
+      "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\Inventory.Infrastructure.csproj",
+      "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
+      "outputPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -5165,8 +5169,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
-              "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
+            "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj": {
+              "projectPath": "C:\\github\\modulithapp\\Modules\\Inventory\\Inventory.Domain\\Inventory.Domain.csproj"
             }
           }
         }
@@ -5175,11 +5179,6 @@
         "warnAsError": [
           "NU1605"
         ]
-      },
-      "restoreAuditProperties": {
-        "enableAudit": "true",
-        "auditLevel": "low",
-        "auditMode": "direct"
       }
     },
     "frameworks": {
@@ -5235,7 +5234,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
       }
     }
   }
