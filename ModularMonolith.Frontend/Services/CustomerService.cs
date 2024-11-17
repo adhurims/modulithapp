@@ -2,6 +2,7 @@
 using System.Net.Http;
 using System.Net.Http.Json;
 using System.Threading.Tasks;
+using CustomerManagement.Domain.Entities;
 using ModularMonolith.Frontend.Models;
 
 namespace ModularMonolith.Frontend.Services
@@ -24,10 +25,22 @@ namespace ModularMonolith.Frontend.Services
 
         public async Task<CustomerModel> GetCustomerByIdAsync(int id)
         {
-            var response = await _httpClient.GetAsync($"api/customer/{id}");
-            response.EnsureSuccessStatusCode();
-            return await response.Content.ReadFromJsonAsync<CustomerModel>();
+            var customer = await _httpClient.GetFromJsonAsync<Customer>($"api/customer/{id}");
+            return new CustomerModel
+            {
+                Id = customer.Id,
+                Name = customer.Name,
+                Email = customer.Email,
+                Address = customer.Address
+            };
         }
+
+        //public async Task<CustomerModel> GetCustomerByIdAsync(int id)
+        //{
+        //    var response = await _httpClient.GetAsync($"api/customer/{id}");
+        //    response.EnsureSuccessStatusCode();
+        //    return await response.Content.ReadFromJsonAsync<CustomerModel>();
+        //}
 
         public async Task AddCustomerAsync(CustomerModel customer)
         {

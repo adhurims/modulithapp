@@ -73,23 +73,22 @@ namespace ModularMonolith.Frontend.Controllers
             return View(model);
         }
 
-        // Delete Actions
-        [HttpGet]
         public async Task<IActionResult> Delete(int id)
         {
-            var customer = await _customerService.GetCustomerByIdAsync(id);
+            var customer = await _customerService.GetCustomerByIdAsync(id);  
             if (customer == null)
             {
                 return NotFound();
-            }
-            return View(customer);
+            } 
+            return View(customer);  
         }
 
         [HttpPost, ActionName("Delete")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _customerService.DeleteCustomerAsync(id);
-            return RedirectToAction("List");
+            return RedirectToAction(nameof(Index));
         }
+
     }
 }
