@@ -1,23 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {}
+    "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {}
   },
   "projects": {
-    "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
+    "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
+        "projectUniqueName": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
         "projectName": "Ordering.Domain",
-        "projectPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
-        "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
-        "outputPath": "C:\\github\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\obj\\",
+        "projectPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\Ordering.Domain.csproj",
+        "packagesPath": "C:\\Users\\adhurim.sulejmani\\.nuget\\packages\\",
+        "outputPath": "E:\\GITHUB\\modulithapp\\Modules\\Ordering\\Ordering.Domain\\obj\\",
         "projectStyle": "PackageReference",
-        "fallbackFolders": [
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-        ],
         "configFilePaths": [
-          "C:\\Users\\DELL\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\adhurim.sulejmani\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -37,6 +34,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -88,7 +90,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
