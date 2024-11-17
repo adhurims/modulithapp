@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace ModularMonolith.WebAPI.Controllers
 {
-    [Authorize]
+    //[Authorize]
     [ApiController]
     [Route("api/[controller]")]
     public class CustomerController : ControllerBase
@@ -18,11 +18,17 @@ namespace ModularMonolith.WebAPI.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<ActionResult<List<Customer>>> GetAllCustomers()
         {
             var customers = await _customerRepository.GetAllAsync();
             return Ok(customers);
         }
+
+        //[HttpGet]
+        //public async Task<IActionResult> GetAll()
+        //{
+           
+        //}
 
         [HttpGet("{id}")]
         public async Task<IActionResult> GetById(int id)
