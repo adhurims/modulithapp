@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModularMonolith.Frontend")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+0e1ea5417d7500f3f32815ff8068af3b774115c4")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModularMonolith.Frontend")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModularMonolith.Frontend")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
