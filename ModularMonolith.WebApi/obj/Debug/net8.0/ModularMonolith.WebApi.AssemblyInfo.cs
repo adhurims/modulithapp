@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ModularMonolith.WebApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+13cbcebd5705b707d4f3ef718eaaf533522a38b2")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+2c6b30357efeea9f412b1fc335ca8efc3faf9e2b")]
 [assembly: System.Reflection.AssemblyProductAttribute("ModularMonolith.WebApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ModularMonolith.WebApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
