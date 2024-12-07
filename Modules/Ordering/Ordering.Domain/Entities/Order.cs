@@ -10,8 +10,8 @@ namespace Ordering.Domain.Entities
     public class Order : Entity, IAggregateRoot
     {
         public int Id { get; private set; }
-        public DateTime OrderDate { get; private set; }
-        public List<OrderItem> Items { get; private set; }
+        public DateTime OrderDate { get; set; }
+        public List<OrderItem> Items { get; set; }
 
         public Order(DateTime orderDate)
         {
@@ -19,6 +19,13 @@ namespace Ordering.Domain.Entities
             Items = new List<OrderItem>();
         }
 
-        public void AddItem(OrderItem item) => Items.Add(item);
+        public void AddItem(OrderItem item)
+        {
+            if (Items == null)
+            {
+                Items = new List<OrderItem>();
+            }
+            Items.Add(item);
+        }
     }
 }

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using CustomerManagement.Domain.Entities;
+using Microsoft.AspNetCore.Mvc;
 using ModularMonolith.Frontend.Models;
 using ModularMonolith.Frontend.Services;
 using System.Threading.Tasks;
@@ -42,13 +43,24 @@ namespace ModularMonolith.Frontend.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(CustomerModel model)
         {
+            
             if (ModelState.IsValid)
-            {
-                await _customerService.AddCustomerAsync(model);
+            { 
+                var customer = new Customer
+                {
+                    Name = model.Name,
+                    Email = model.Email,
+                    Address = model.Address,
+                    PhoneNumber = model.PhoneNumber,
+                    UserId = "3f0d3ccb-4133-449f-84dd-001124d637e5"
+                };
+
+                await _customerService.AddCustomerAsync(customer);
                 return RedirectToAction("List");
             }
             return View(model);
         }
+
 
         // Edit Actions
         [HttpGet]
@@ -83,12 +95,14 @@ namespace ModularMonolith.Frontend.Controllers
             return View(customer);  
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
+        [Route("Product/DeleteConfirmed")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _customerService.DeleteCustomerAsync(id);
-            return RedirectToAction(nameof(Index));
+            return RedirectToAction("List");
         }
+
 
     }
 }

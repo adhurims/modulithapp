@@ -19,10 +19,11 @@ namespace CustomerManagement.Application.Commands.Handlers
         }
 
         public async Task<bool> Handle(AddCustomerCommand request, CancellationToken cancellationToken)
-        {
-            var customer = new Customer(request.Name, request.Email, request.Address);
+        { 
+            var customer = new Customer(request.Name, request.Email, request.Address, request.PhoneNumber);
             await _customerRepository.AddAsync(customer);
             return true;
         }
     }
+
 }

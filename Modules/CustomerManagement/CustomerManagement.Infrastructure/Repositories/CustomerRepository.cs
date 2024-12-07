@@ -31,15 +31,30 @@ namespace CustomerManagement.Infrastructure.Repositories
         }
 
         public async Task UpdateAsync(Customer customer)
-        {
+        { 
             _context.Customers.Update(customer);
+             
+            if (customer.User != null)
+            {
+                _context.Users.Update(customer.User);
+            }
+             
             await _context.SaveChangesAsync();
         }
 
+
         public async Task DeleteAsync(Customer customer)
         {
+           
+            var user = await _context.Users.FindAsync(customer.UserId);
+            if (user != null)
+            {
+                _context.Users.Remove(user);
+            }
+             
             _context.Customers.Remove(customer);
+             
             await _context.SaveChangesAsync();
-        } 
+        }
     }
 }

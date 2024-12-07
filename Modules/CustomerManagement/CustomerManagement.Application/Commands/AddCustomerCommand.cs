@@ -12,12 +12,14 @@ namespace CustomerManagement.Application.Commands
         public string Name { get; }
         public string Email { get; }
         public string Address { get; }
+        public string PhoneNumber { get; }
 
-        public AddCustomerCommand(string name, string email, string address)
+        public AddCustomerCommand(string name, string email, string address, string phoneNumber)
         {
             Name = name;
             Email = email;
             Address = address;
+            PhoneNumber = phoneNumber;
         }
     }
 }

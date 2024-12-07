@@ -4,8 +4,7 @@
     "Projects": [
       {
         "Name": "ModularMonolith.Frontend\\ModularMonolith.Frontend.csproj",
-        "Action": "Start",
-        "DebugTarget": ""
+        "Action": "Start"
       },
       {
         "Name": "ModularMonolith.WebApi\\ModularMonolith.WebApi.csproj",

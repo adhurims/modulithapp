@@ -13,7 +13,7 @@ namespace Inventory.Application.Mappings
     {
         public ProductProfile()
         {
-            CreateMap<Product, ProductDto>();
+            CreateMap<Product, ProductDto>().ReverseMap();
         }
     }
 }

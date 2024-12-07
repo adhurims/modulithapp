@@ -1,12 +1,7 @@
-﻿@model CustomerManagement.Domain.Entities.Customer
-
-@{
-    ViewData["Title"] = "Create Customer";
-}
-
-<h2>Create Customer</h2>
+﻿@model ModularMonolith.Frontend.Models.CustomerModel
 
 <form asp-action="Create" method="post">
+    <input type="hidden" asp-for="UserId" value="GeneratedUserId" />
     <div class="form-group">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
@@ -22,6 +17,10 @@
         <input asp-for="Address" class="form-control" />
         <span asp-validation-for="Address" class="text-danger"></span>
     </div>
+    <div class="form-group">
+        <label asp-for="PhoneNumber"></label>
+        <input asp-for="PhoneNumber" class="form-control" />
+        <span asp-validation-for="PhoneNumber" class="text-danger"></span>
+    </div>
     <button type="submit" class="btn btn-primary">Save</button>
-    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

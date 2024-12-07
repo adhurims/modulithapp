@@ -17,35 +17,33 @@ namespace ModularMonolith.Frontend.Services
         {
             _httpClient = httpClient;
         }
-
-        // Get all products
+         
         public async Task<List<ProductDto>> GetAllProductsAsync()
         {
-            return await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/inventory");
+            return await _httpClient.GetFromJsonAsync<List<ProductDto>>("api/product");
         }
 
-        // Get a single product by ID
         public async Task<ProductDto> GetProductByIdAsync(int id)
         {
-            return await _httpClient.GetFromJsonAsync<ProductDto>($"api/inventory/{id}");
+            return await _httpClient.GetFromJsonAsync<ProductDto>($"api/product/{id}");
         }
 
         // Create a new product
         public async Task CreateProductAsync(ProductDto product)
         {
-            await _httpClient.PostAsJsonAsync("api/inventory", product);
+            await _httpClient.PostAsJsonAsync("api/product", product);
         }
 
         // Update an existing product
         public async Task UpdateProductAsync(int id, ProductDto product)
         {
-            await _httpClient.PutAsJsonAsync($"api/inventory/{id}", product);
+            await _httpClient.PutAsJsonAsync($"api/product/{id}", product);
         }
 
         // Delete a product by ID
         public async Task DeleteProductAsync(int id)
         {
-            await _httpClient.DeleteAsync($"api/inventory/{id}");
+            await _httpClient.DeleteAsync($"api/product/{id}");
         }
     }
 }

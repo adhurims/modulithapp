@@ -121,7 +121,47 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ModularMonolith.WebAPI.Controllers.OrderingController",
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
+    "Method": "GetAllProducts",
+    "RelativePath": "api/Ordering",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Ordering.Application.DTOs.ProductDto, Ordering.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
+    "Method": "GetAllOrders",
+    "RelativePath": "api/Ordering",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Collections.Generic.IEnumerable\u00601[[Ordering.Application.DTOs.OrderDto, Ordering.Application, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "MediaTypes": [
+          "text/plain",
+          "application/json",
+          "text/json"
+        ],
+        "StatusCode": 200
+      }
+    ]
+  },
+  {
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
     "Method": "CreateOrder",
     "RelativePath": "api/Ordering",
     "HttpMethod": "POST",
@@ -137,7 +177,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ModularMonolith.WebAPI.Controllers.OrderingController",
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
     "Method": "GetOrderById",
     "RelativePath": "api/Ordering/{id}",
     "HttpMethod": "GET",
@@ -163,7 +203,7 @@
     ]
   },
   {
-    "ContainingType": "ModularMonolith.WebAPI.Controllers.OrderingController",
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
     "Method": "UpdateOrder",
     "RelativePath": "api/Ordering/{id}",
     "HttpMethod": "PUT",
@@ -184,7 +224,7 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "ModularMonolith.WebAPI.Controllers.OrderingController",
+    "ContainingType": "ModularMonolith.WebApi.Controllers.OrderingController",
     "Method": "DeleteOrder",
     "RelativePath": "api/Ordering/{id}",
     "HttpMethod": "DELETE",
@@ -294,6 +334,38 @@
         "Name": "id",
         "Type": "System.Int32",
         "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ModularMonolith.Frontend.Controllers.ProductController",
+    "Method": "DeleteConfirmed",
+    "RelativePath": "Customer/DeleteConfirmed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ModularMonolith.Frontend.Controllers.CustomerController",
+    "Method": "DeleteConfirmed",
+    "RelativePath": "Product/DeleteConfirmed",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

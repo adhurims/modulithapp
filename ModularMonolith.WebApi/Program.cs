@@ -17,6 +17,8 @@ using Ordering.Application.Mappings;
 using Ordering.Domain.Repositories;
 using Ordering.Infrastructure.Persistence;
 using Ordering.Infrastructure.Repositories;
+using Ordering.Application.Interfaces;
+using Ordering.Domain.DomainServices;
 
 var builder = WebApplication.CreateBuilder(args);
  
@@ -32,7 +34,16 @@ builder.Services.AddDbContext<OrderingDbContext>(options =>
 builder.Services.AddIdentity<ApplicationUser, IdentityRole>()
     .AddEntityFrameworkStores<CustomerManagementDbContext>()
     .AddDefaultTokenProviders();
- 
+
+builder.Services.AddScoped<IPaymentService, StripePaymentService>(provider =>
+{
+    var configuration = provider.GetRequiredService<IConfiguration>();
+    var stripeApiKey = configuration["Stripe:ApiKey"]; // Lexo çelësin nga konfigurimi
+    return new StripePaymentService(stripeApiKey);
+});
+
+builder.Services.AddScoped<UserManager<ApplicationUser>>();
+
 builder.Services.AddAuthentication(options =>
 {
     options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;

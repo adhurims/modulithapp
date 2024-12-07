@@ -40,13 +40,13 @@ namespace Ordering.Infrastructure.Migrations
 
             modelBuilder.Entity("Ordering.Domain.Entities.OrderItem", b =>
                 {
-                    b.Property<int>("ProductId")
-                        .ValueGeneratedOnAdd()
+                    b.Property<int>("OrderId")
                         .HasColumnType("int");
 
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("ProductId"));
+                    b.Property<int>("ProductId")
+                        .HasColumnType("int");
 
-                    b.Property<int?>("OrderId")
+                    b.Property<int>("Id")
                         .HasColumnType("int");
 
                     b.Property<decimal>("Price")
@@ -55,19 +55,20 @@ namespace Ordering.Infrastructure.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("int");
 
-                    b.HasKey("ProductId");
-
-                    b.HasIndex("OrderId");
+                    b.HasKey("OrderId", "ProductId");
 
                     b.ToTable("OrderItems");
                 });
 
             modelBuilder.Entity("Ordering.Domain.Entities.OrderItem", b =>
                 {
-                    b.HasOne("Ordering.Domain.Entities.Order", null)
+                    b.HasOne("Ordering.Domain.Entities.Order", "Order")
                         .WithMany("Items")
                         .HasForeignKey("OrderId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Order");
                 });
 
             modelBuilder.Entity("Ordering.Domain.Entities.Order", b =>

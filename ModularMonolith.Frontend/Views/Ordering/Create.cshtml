@@ -1,0 +1,76 @@
+﻿@model Ordering.Application.DTOs.CreateOrderDto
+
+<form asp-action="Create" method="post">
+    <div>
+        <label for="OrderDate">Order Date</label>
+        <input asp-for="OrderDate" type="date" />
+    </div>
+
+    <h3>Order Items</h3>
+    <table>
+        <thead>
+            <tr>
+                <th>Product ID</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @for (int i = 0; i < Model.Items.Count; i++)
+            {
+                <tr>
+                    <td>
+                        <select asp-for="Items[@i].ProductId" asp-items="Model.ProductList">
+                            <option value="">-- Select Product --</option>
+                        </select>
+                    </td>
+                    <td>
+                        <input asp-for="Items[@i].Quantity" />
+                    </td>
+                    <td>
+                        <input asp-for="Items[@i].Price" />
+                    </td>
+                    <td>
+                        <button type="button" onclick="removeItem(@i)">Remove</button>
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+
+    <button type="button" onclick="addItem()">Add Item</button>
+    <button type="submit">Submit</button>
+</form>
+
+<script>
+    function addItem() { 
+        const tableBody = document.querySelector("table tbody");
+        const rowCount = tableBody.children.length;
+
+        const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+                <td><input name="Items[${rowCount}].ProductId" /></td>
+                <td><input name="Items[${rowCount}].Quantity" type="number" /></td>
+                <td><input name="Items[${rowCount}].Price" type="number" step="0.01" /></td>
+                <td><button type="button" onclick="removeItem(this)">Remove</button></td>
+            `;
+        tableBody.appendChild(newRow);
+    }
+
+    function removeItem(button) {
+    
+        const row = button.closest("tr");
+        row.remove();
+         
+        const tableBody = document.querySelector("table tbody");
+        Array.from(tableBody.children).forEach((row, index) => {
+            row.querySelectorAll("input").forEach(input => {
+                const name = input.name.replace(/\d+/, index);
+                input.name = name;
+            });
+        });
+    }
+</script>
+

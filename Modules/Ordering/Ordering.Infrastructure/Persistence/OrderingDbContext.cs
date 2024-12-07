@@ -26,17 +26,14 @@ namespace Ordering.Infrastructure.Persistence
                 .IsRequired();
 
             modelBuilder.Entity<Order>()
-                .HasMany(o => o.Items)
-                .WithOne()
+                .HasMany(o => o.Items) // Navigation property in Order
+                .WithOne(oi => oi.Order) // Navigation property in OrderItem
+                .HasForeignKey(oi => oi.OrderId) // Foreign key in OrderItem
                 .OnDelete(DeleteBehavior.Cascade);
 
             // Configure OrderItem entity
             modelBuilder.Entity<OrderItem>()
-                .HasKey(oi => oi.ProductId);
-
-            modelBuilder.Entity<OrderItem>()
-                .Property(oi => oi.ProductId)
-                .IsRequired();
+                .HasKey(oi => new { oi.OrderId, oi.ProductId }); // Composite key
 
             modelBuilder.Entity<OrderItem>()
                 .Property(oi => oi.Quantity)
@@ -46,6 +43,12 @@ namespace Ordering.Infrastructure.Persistence
                 .Property(oi => oi.Price)
                 .IsRequired()
                 .HasColumnType("decimal(18,2)");
+
+            modelBuilder.Entity<OrderItem>()
+                .HasOne(oi => oi.Order) // Navigation property in OrderItem
+                .WithMany(o => o.Items) // Navigation property in Order
+                .HasForeignKey(oi => oi.OrderId); // Foreign key in OrderItem
         }
+
     }
 }

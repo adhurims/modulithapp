@@ -16,7 +16,6 @@ namespace Ordering.Application.Mappings
         {
             CreateMap<Order, OrderDto>()
                 .ForMember(dest => dest.Items, opt => opt.MapFrom(src => src.Items));
-
             CreateMap<OrderItem, OrderItemDto>();
         }
     }

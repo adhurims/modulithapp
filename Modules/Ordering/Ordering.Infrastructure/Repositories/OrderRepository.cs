@@ -1,12 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Ordering.Domain.Entities;
 using Ordering.Domain.Repositories;
-using Ordering.Infrastructure.Persistence;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using Ordering.Infrastructure.Persistence; 
 
 namespace Ordering.Infrastructure.Repositories
 {
@@ -21,23 +16,24 @@ namespace Ordering.Infrastructure.Repositories
 
         public async Task AddAsync(Order order)
         {
-            await _context.Orders.AddAsync(order);
+            await _context.Orders.AddAsync(order); // Includes OrderItems via navigation property
             await _context.SaveChangesAsync();
         }
 
         public async Task<Order> GetByIdAsync(int id)
         {
             return await _context.Orders
-                .Include(o => o.Items) // Include related OrderItems if needed
+                .Include(o => o.Items)  
                 .FirstOrDefaultAsync(o => o.Id == id);
         }
 
         public async Task<IEnumerable<Order>> GetAllAsync()
         {
             return await _context.Orders
-                .Include(o => o.Items)  
-                .ToListAsync();
+                                 .Include(o => o.Items)  
+                                 .ToListAsync();
         }
+
 
         public async Task UpdateAsync(Order order)
         {
@@ -51,4 +47,6 @@ namespace Ordering.Infrastructure.Repositories
             await _context.SaveChangesAsync();
         }
     }
+
+
 }

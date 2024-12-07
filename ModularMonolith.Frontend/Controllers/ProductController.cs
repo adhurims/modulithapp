@@ -1,17 +1,10 @@
-﻿using AutoMapper;
+﻿using Microsoft.AspNetCore.Mvc;
+using ModularMonolith.Frontend.Services;
 using Inventory.Application.DTOs;
-using Inventory.Domain.Entities;
-using Inventory.Domain.Repositories;
-using Microsoft.AspNetCore.Mvc;
+using System.Threading.Tasks;
 
-namespace ModularMonolith.WebAPI.Controllers
+namespace ModularMonolith.Frontend.Controllers
 {
-    // Controllers/ProductController.cs
-    using Microsoft.AspNetCore.Mvc;
-    using ModularMonolith.Frontend.Models;
-    using ModularMonolith.Frontend.Services;
-    using System.Threading.Tasks;
-
     public class ProductController : Controller
     {
         private readonly InventoryService _inventoryService;
@@ -21,13 +14,26 @@ namespace ModularMonolith.WebAPI.Controllers
             _inventoryService = inventoryService;
         }
 
-        public async Task<IActionResult> Index()
+        public async Task<IActionResult> List()
         {
             var products = await _inventoryService.GetAllProductsAsync();
             return View(products);
         }
 
-        public IActionResult Create() => View();
+        public async Task<IActionResult> Details(int id)
+        {
+            var product = await _inventoryService.GetProductByIdAsync(id);
+            if (product == null)
+            {
+                return NotFound();
+            }
+            return View(product);
+        }
+
+        public IActionResult Create()
+        {
+            return View();
+        }
 
         [HttpPost]
         public async Task<IActionResult> Create(ProductDto product)
@@ -35,7 +41,7 @@ namespace ModularMonolith.WebAPI.Controllers
             if (ModelState.IsValid)
             {
                 await _inventoryService.CreateProductAsync(product);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(List));
             }
             return View(product);
         }
@@ -56,7 +62,7 @@ namespace ModularMonolith.WebAPI.Controllers
             if (ModelState.IsValid)
             {
                 await _inventoryService.UpdateProductAsync(id, product);
-                return RedirectToAction(nameof(Index));
+                return RedirectToAction(nameof(List));
             }
             return View(product);
         }
@@ -71,21 +77,12 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(product);
         }
 
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
+        [Route("Customer/DeleteConfirmed")]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _inventoryService.DeleteProductAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Details(int id)
-        {
-            var product = await _inventoryService.GetProductByIdAsync(id);
-            if (product == null)
-            {
-                return NotFound();
-            }
-            return View(product);
+            return RedirectToAction(nameof(List));
         }
     }
 }

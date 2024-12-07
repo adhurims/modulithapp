@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using ModularMonolith.Frontend.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using ModularMonolith.Frontend.Services;
 using Ordering.Application.DTOs;
-using System.Threading.Tasks;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace ModularMonolith.WebAPI.Controllers
+namespace ModularMonolith.Frontend.Controllers
 {
     public class OrderingController : Controller
     {
@@ -15,26 +15,15 @@ namespace ModularMonolith.WebAPI.Controllers
             _orderingService = orderingService;
         }
 
-        public async Task<IActionResult> Index()
+        // List of Orders
+        public async Task<IActionResult> List()
         {
             var orders = await _orderingService.GetAllOrdersAsync();
             return View(orders);
         }
 
-        public IActionResult Create() => View();
-
-        [HttpPost]
-        public async Task<IActionResult> Create(OrderDto order)
-        {
-            if (ModelState.IsValid)
-            {
-                await _orderingService.CreateOrderAsync(order);
-                return RedirectToAction(nameof(Index));
-            }
-            return View(order);
-        }
-
-        public async Task<IActionResult> Edit(int id)
+        // Order Details
+        public async Task<IActionResult> Details(int id)
         {
             var order = await _orderingService.GetOrderByIdAsync(id);
             if (order == null)
@@ -44,15 +33,77 @@ namespace ModularMonolith.WebAPI.Controllers
             return View(order);
         }
 
+        [HttpGet]
+        public async Task<IActionResult> Create()
+        {
+            var products = await _orderingService.GetAvailableProductsAsync();
+            var model = new CreateOrderDto
+            {
+                OrderDate = DateTime.Now,
+                Items = new List<CreateOrderItemDto>(),
+                ProductList = products.Select(p => new SelectListItem
+                {
+                    Value = p.ProductId.ToString(),
+                    Text = p.Name // Use appropriate product property for display
+                })
+            };
+            return View(model);
+        }
+
+
+
         [HttpPost]
-        public async Task<IActionResult> Edit(int id, OrderDto order)
+        public async Task<IActionResult> Create(CreateOrderDto model)
         {
             if (ModelState.IsValid)
             {
-                await _orderingService.UpdateOrderAsync(id, order);
-                return RedirectToAction(nameof(Index));
+                var paymentResult = await _orderingService.ProcessPaymentAsync(model);
+
+                if (paymentResult.IsSuccess)
+                {
+                    await _orderingService.CreateOrderAsync(model);
+                    return RedirectToAction("List");
+                }
+
+                ModelState.AddModelError("", "Payment failed. Please try again.");
             }
-            return View(order);
+
+            model.Products = await _orderingService.GetAvailableProductsAsync(); // Reload products
+            return View(model);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> Edit(int id)
+        {
+            var order = await _orderingService.GetOrderByIdAsync(id);
+            if (order == null)
+            {
+                return NotFound();
+            }
+
+            var model = new UpdateOrderDto
+            {
+                OrderDate = order.OrderDate,
+                Items = order.Items.Select(item => new UpdateOrderItemDto
+                {
+                    ProductId = item.ProductId,
+                    Quantity = item.Quantity,
+                    Price = item.Price
+                }).ToList()
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Edit(int id, UpdateOrderDto model)
+        {
+            if (ModelState.IsValid)
+            {
+                await _orderingService.UpdateOrderAsync(id, model);
+                return RedirectToAction("List");
+            }
+            return View(model);
         }
 
         public async Task<IActionResult> Delete(int id)
@@ -69,17 +120,7 @@ namespace ModularMonolith.WebAPI.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             await _orderingService.DeleteOrderAsync(id);
-            return RedirectToAction(nameof(Index));
-        }
-
-        public async Task<IActionResult> Details(int id)
-        {
-            var order = await _orderingService.GetOrderByIdAsync(id);
-            if (order == null)
-            {
-                return NotFound();
-            }
-            return View(order);
+            return RedirectToAction("List");
         }
     }
 }

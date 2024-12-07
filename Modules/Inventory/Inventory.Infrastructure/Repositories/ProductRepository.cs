@@ -1,10 +1,8 @@
 ﻿using Inventory.Domain.Entities;
 using Inventory.Domain.Repositories;
 using Inventory.Infrastructure.Persistence;
-using System;
+using Microsoft.EntityFrameworkCore;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
 using System.Threading.Tasks;
 
 namespace Inventory.Infrastructure.Repositories
@@ -18,20 +16,33 @@ namespace Inventory.Infrastructure.Repositories
             _context = context;
         }
 
-        public async Task AddAsync(Product product) => await _context.Products.AddAsync(product);
-
-        public Task DeleteAsync(Product product)
+        // Add a new product
+        public async Task AddAsync(Product product)
         {
-            throw new NotImplementedException();
+            await _context.Products.AddAsync(product);
+            await _context.SaveChangesAsync();
         }
 
-        public Task<Product> GetAllAsync()
+        // Delete an existing product
+        public async Task DeleteAsync(Product product)
         {
-            throw new NotImplementedException();
+            _context.Products.Remove(product);
+            await _context.SaveChangesAsync();
         }
 
-        public async Task<Product> GetByIdAsync(int id) => await _context.Products.FindAsync(id);
+        // Get all products
+        public async Task<List<Product>> GetAllAsync()
+        {
+            return await _context.Products.ToListAsync();
+        }
 
+        // Get a product by ID
+        public async Task<Product> GetByIdAsync(int id)
+        {
+            return await _context.Products.FindAsync(id);
+        }
+
+        // Update an existing product
         public async Task UpdateAsync(Product product)
         {
             _context.Products.Update(product);

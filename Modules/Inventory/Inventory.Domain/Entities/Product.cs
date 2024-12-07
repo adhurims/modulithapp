@@ -9,9 +9,9 @@ namespace Inventory.Domain.Entities
 {
     public class Product : Entity, IAggregateRoot
     {
-        public string Name { get; private set; }
-        public int StockLevel { get; private set; }
-        public decimal Price { get; private set; }
+        public string Name { get;  set; }
+        public int StockLevel { get;  set; }
+        public decimal Price { get;  set; }
 
         public Product(string name, int stockLevel, decimal price)
         {

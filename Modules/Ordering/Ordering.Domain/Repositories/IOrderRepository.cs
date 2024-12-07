@@ -11,6 +11,9 @@ namespace Ordering.Domain.Repositories
     {
         Task AddAsync(Order order);
         Task<Order> GetByIdAsync(int id);
+        Task<IEnumerable<Order>> GetAllAsync();
+        Task UpdateAsync(Order order);
+        Task DeleteAsync(Order order);
     }
 
 }

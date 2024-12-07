@@ -1,0 +1,23 @@
+﻿@model Inventory.Application.DTOs.ProductDto
+
+@{
+    ViewData["Title"] = "Product Details";
+}
+
+<h2>Product Details</h2>
+
+<div>
+    <h4>Product</h4>
+    <dl class="dl-horizontal">
+        <dt>Name</dt>
+        <dd>@Model.Name</dd>
+        <dt>Stock Level</dt>
+        <dd>@Model.StockLevel</dd>
+        <dt>Price</dt>
+        <dd>@Model.Price</dd>
+    </dl>
+</div>
+
+<div>
+    <a asp-action="List" class="btn btn-secondary">Back to List</a>
+</div>

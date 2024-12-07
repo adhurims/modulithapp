@@ -13,6 +13,6 @@ namespace Inventory.Domain.Repositories
         Task<Product> GetByIdAsync(int id);
         Task UpdateAsync(Product product);
         Task DeleteAsync(Product product);
-        Task<Product> GetAllAsync(); 
+        Task<List<Product>> GetAllAsync(); 
     }
 }

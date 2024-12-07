@@ -8,10 +8,18 @@ namespace Ordering.Domain.Entities
 {
     public class OrderItem
     {
-        public int ProductId { get; private set; }
-        public int Quantity { get; private set; }
-        public decimal Price { get; private set; }
+        public int Id { get; set; }
+        public int ProductId { get; set; }
+        public int Quantity { get; set; }
+        public decimal Price { get; set; }
 
+        // Foreign key
+        public int OrderId { get; set; }
+
+        // Navigation property
+        public Order Order { get; set; }
+
+        // Constructor to initialize fields
         public OrderItem(int productId, int quantity, decimal price)
         {
             ProductId = productId;
